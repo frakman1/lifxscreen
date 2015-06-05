@@ -22,7 +22,7 @@ BULB_NAME      = "all"  # you can use any label you've assigned your bulb here
 
 # run loop
 while True:
-	#init constants
+	#init counters/accumulators
 	red   = 0
 	green = 0
 	blue  = 0
