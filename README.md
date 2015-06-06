@@ -9,6 +9,8 @@ PIL (which relies on VCForPython27: http://www.microsoft.com/en-us/download/deta
 
 colour (https://pypi.python.org/pypi/colour/)
 
+curl (http://www.confusedbycode.com/curl/#downloads)
+
 ##Syntax:
 
 ```
