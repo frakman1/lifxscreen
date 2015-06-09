@@ -16,7 +16,7 @@ DURATION       = 3    # how long it takes bulb to switch colours (in seconds)
 DECIMATE       = 10   # skip every DECIMATE number of pixels to speed up calculation
 #get your unit-unique token from http://developer.lifx.com/ and use it here
 TOKEN          = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
-BULB_NAME      = "all"  # you can use any label you've assigned your bulb here
+BULB_NAME      = "all"  # you can use any label you've assigned your bulb here, but if you do, make sure you use the curl syntax alternative with "label:" instead.
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -60,7 +60,8 @@ while True:
 	#//////////////////////////////////////////////////////////////////////////////////////////////////////////
 	# PROGRAM LIFX BULB WITH COLOUR 
 	#//////////////////////////////////////////////////////////////////////////////////////////////////////////
-	cmd = " c:\\curl\\curl.exe -u \""+TOKEN+":\" -X PUT -d \"color=" + str(c.hex) + "\" -d \"duration=" +str(DURATION)+ "\" \"https://api.lifx.com/v1beta1/lights/label:"+BULB_NAME+"/color\"" 
+	cmd = " c:\\curl\\curl.exe -u \""+TOKEN+":\" -X PUT -d \"color=" + str(c.hex) + "\" -d \"duration=" +str(DURATION)+ "\" \"https://api.lifx.com/v1beta1/lights/"+BULB_NAME+"/color\"" 
+	#cmd = " c:\\curl\\curl.exe -u \""+TOKEN+":\" -X PUT -d \"color=" + str(c.hex) + "\" -d \"duration=" +str(DURATION)+ "\" \"https://api.lifx.com/v1beta1/lights/label:"+BULB_NAME+"/color\"" 
 	print cmd
 	os.system(cmd)
 	
