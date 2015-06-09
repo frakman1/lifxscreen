@@ -16,7 +16,7 @@ DURATION       = 3    # how long it takes bulb to switch colours (in seconds)
 DECIMATE       = 10   # skip every DECIMATE number of pixels to speed up calculation
 #get your unit-unique token from http://developer.lifx.com/ and use it here
 TOKEN          = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
-BULB_NAME      = "all"  # you can use any label you've assigned your bulb here, but if you do, make sure you use the curl syntax alternative with "label:" instead.
+BULB_NAME      = "all"  # you can use any label you've assigned your bulb here, but if you do, make sure you use the curl syntax alternative with "label:" instead. I provided a commented out version of it below.
 #//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
