@@ -1,5 +1,6 @@
 # lifxscreen
-Continuously calculates the average colour of your screen and sets your LIFX bulb(s) to that color
+- Uses the HTTP API for LIFX
+- Continuously calculates the average colour of your screen and sets your LIFX bulb(s) to that color
 
 I use this on a windows 7 64bit machine. Python version 2.7.5. 
 
