@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg">
+
 # lifxscreen
 - Uses the HTTP API for LIFX
 - Continuously calculates the average colour of your screen and sets your LIFX bulb(s) to that color
